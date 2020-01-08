@@ -1,0 +1,11 @@
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\bin\Debug\My Contact.exe
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\bin\Debug\My Contact.pdb
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\obj\x86\Debug\My_Contact.Home.resources
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\obj\x86\Debug\My_Contact.NewContact.resources
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\obj\x86\Debug\My_Contact.Properties.Resources.resources
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\obj\x86\Debug\My Contact.csproj.GenerateResource.Cache
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\obj\x86\Debug\My Contact.exe
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\obj\x86\Debug\My Contact.pdb
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\obj\x86\Debug\My_Contact.ShowContacts.resources
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\obj\x86\Debug\My_Contact.Action.resources
+C:\Users\MT\OneDrive\Documents\Visual Studio 2010\Projects\My Contact\My Contact\obj\x86\Debug\My Contact.csprojResolveAssemblyReference.cache
