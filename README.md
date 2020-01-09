@@ -1,4 +1,4 @@
-# Contact
+# My Contact
 C# Windows Form Template Project
 
 ## Documentation
