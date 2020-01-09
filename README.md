@@ -19,16 +19,8 @@ C# Windows Form Template Project
  3. create new contact button
  4. show all contacts button
 
-Home.cs
+**Home.cs**
 
-```
- public static List<Contact> contactList;
-        public Home()
-        {
-            InitializeComponent();
-            contactList = new List<Contact>();
-        }
-```
 
     public  static  List<Contact> contactList;
     
@@ -38,7 +30,9 @@ Home.cs
     contactList  =  new  List<Contact>();
     }
     
-Contact data တွေကိုသိမ်းဖို့ *contactList* ဆိုတဲ့ Contact အမျိုးစား List တစ်ခု ဆောက်ပါတယ်။ သတိထားရမှာက static keyword သုံးပီးလုပ်ထားတာပါ၊ တခြား Form class ကနေ တိုက်ရိုက် ယူသုံးလို့ရအောင်ပါ။ (Contact class ကိုတော့ project ထဲမှာ ကြည့်နိုင်ပါတယ်)
+>
+Contact data တွေကိုသိမ်းဖို့ *contactList* ဆိုတဲ့ Contact အမျိုးစား List တစ်ခု ဆောက်ပါတယ်။ သတိထားရမှာက *static keyword* သုံးပီးလုပ်ထားတာပါ၊ 
+တခြား Form class ကနေ တိုက်ရိုက် ယူသုံးလို့ရအောင်ပါ။ (Contact class ကိုတော့ project ထဲမှာ ကြည့်နိုင်ပါတယ်)
 
     private  void  Home_Load(object sender, EventArgs e)
     {
