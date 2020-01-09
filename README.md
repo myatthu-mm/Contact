@@ -44,7 +44,7 @@ C# Windows Form Template Project
     }
     
    
-Form load မှာ contact ၅ ခုကို အရင် initialize လုပ်ထားတာပါ(show all ကို click ရင် data မြင်ရအောင်လို့)
+> Form load မှာ contact ၅ ခုကို အရင် initialize လုပ်ထားတာပါ(show all ကို click ရင် data မြင်ရအောင်လို့)
 
     private  void  btnNewContact_Click(object sender, EventArgs e)
     {
@@ -56,21 +56,27 @@ Form load မှာ contact ၅ ခုကို အရင် initialize လု�
     new  ShowContacts().ShowDialog(this);
     }
 
-**New contact button နဲ့ Show all button တွေရဲ့ onClick functions တွေပါ။ New contact ကို click ရင် Create New Contact form ကို ကူးသွားရမှာပါ။ အဲ့မှာ သတိထားရမှာက ShowDialog(this) ပါ။ ကူးသွားတဲ့ New Contact form ကို child form ဖြစ်စေဖို့ပါ။ New Contact form က child form အဖြစ် ရှိနေရင် Parent form ဖြစ်တဲ့ Home form ကို Child form(New Contact form) active ဖြစ်နေစဥ် click လို့ မရအောင်ပါ။ ShowContact form ကို ကူးတဲ့ အခါမှာလည်း အလားတူပဲ ဖြစ်တယ်။**
+> **New contact button နဲ့ Show all button တွေရဲ့ onClick functions တွေပါ။ New contact ကို click ရင် Create New Contact form ကို
+> ကူးသွားရမှာပါ။ အဲ့မှာ သတိထားရမှာက ShowDialog(this) ပါ။ ကူးသွားတဲ့ New
+> Contact form ကို child form ဖြစ်စေဖို့ပါ။ New Contact form က child
+> form အဖြစ် ရှိနေရင် Parent form ဖြစ်တဲ့ Home form ကို Child form(New
+> Contact form) active ဖြစ်နေစဥ် click လို့ မရအောင်ပါ။ ShowContact form
+> ကို ကူးတဲ့ အခါမှာလည်း အလားတူပဲ ဖြစ်တယ်။**
+
 
 ### New Contact Form
 ![New Contact Form](https://github.com/myatthu-mm/Contact/blob/master/ss/new.png)
 
 ပုံမှာ တွေ့တဲ့အတိုင်း input fields တွေအနေနဲ့ textbox 3 ခု combo 1 ခု checkbox 1 ခု ပါ။
 
-NewContact.cs
+**NewContact.cs**
 
     private void NewContact_Load(object sender, EventArgs e)
       {
                 cboRelation.SelectedIndex = 0;
       }
 
-Form load မှာ combo box ရဲ့ ပထမဆုံး item ကို ရွေးထားစေချင်လို့ပါ
+> Form load မှာ combo box ရဲ့ ပထမဆုံး item ကို ရွေးထားစေချင်လို့ပါ
 
     private void btnSave_Click(object sender, EventArgs e)
             {
@@ -90,9 +96,11 @@ Form load မှာ combo box ရဲ့ ပထမဆုံး item ကို ရ
                 MessageBox.Show(name + " has been successfully saved!");
             }
 
-Input fields တွေကနေ value တွေယူပီး Home form မှာ ရှိတဲ့ Contacts တွေသိမ်းတဲ့ list ထဲပဲ သိမ်းတာပါ ။ value တွေယူတဲ့အခါ validation တွေကိုတော့ မထည့်ထားပါဘူး (ထည့်ချင်ရင် ကိုယ့်ဘာသာထည့်လို့ပြောတာ)
-သိမ်းပီးရင်တော့ input fields တွေကို ပြန်ပီး Clear လုပ်ဖို့ လိုပါတယ်(ဒါမှ နောက် contact ထည့်သွင်းလို့ အဆင်ပြေမှာပါ)
-
+> Input fields တွေကနေ value တွေယူပီး Home form မှာ ရှိတဲ့ Contacts
+> တွေသိမ်းတဲ့ list ထဲပဲ သိမ်းတာပါ ။ value တွေယူတဲ့အခါ validation
+> တွေကိုတော့ မထည့်ထားပါဘူး (ထည့်ချင်ရင် ကိုယ့်ဘာသာထည့်လို့ပြောတာ)
+> သိမ်းပီးရင်တော့ input fields တွေကို ပြန်ပီး Clear လုပ်ဖို့
+> လိုပါတယ်(ဒါမှ နောက် contact ထည့်သွင်းလို့ အဆင်ပြေမှာပါ)
 
 ### ShowContacts Form
 ![Show Contacts Form](https://github.com/myatthu-mm/Contact/blob/master/ss/show.png)
@@ -107,7 +115,7 @@ Input fields တွေကနေ value တွေယူပီး Home form မှ�
 > Refresh button က update နဲ့ delete လုပ်ပီးတိုင်း click မှ GridView မှာ
 > update ဖြစ်မှာပါ
 
-ShowContacts.cs
+**ShowContacts.cs**
 
     public ShowContacts()
             {
@@ -115,7 +123,7 @@ ShowContacts.cs
                 ShowAllContacts();
             }
 
-Form load မှာ list ထဲမှာ ရှိတဲ့ contact တွေအားလုံး Grid View မှာ ပြဖို့လိုပါတယ်
+> Form load မှာ list ထဲမှာ ရှိတဲ့ contact တွေအားလုံး Grid View မှာ ပြဖို့လိုပါတယ်
 
     private void UpdateGridView(List<Contact> list)
             {
@@ -134,7 +142,7 @@ Form load မှာ list ထဲမှာ ရှိတဲ့ contact တွေအ
                 }
             }
 
-UpdateGridView function ရဲ့ responsibility က parameter ပေးတဲ့ list ရဲ့ data တွေအတိုင်း GridView မှာ ပေါ်ပေးဖို့ပါ
+> UpdateGridView function ရဲ့ responsibility က parameter ပေးတဲ့ list ရဲ့ data တွေအတိုင်း GridView မှာ ပေါ်ပေးဖို့ပါ
 
     private void cboRelation_SelectedIndexChanged(object sender, EventArgs e)
             {
@@ -146,7 +154,10 @@ UpdateGridView function ရဲ့ responsibility က parameter ပေးတဲ�
                 lblStatus.Text = "Relation is searching...";
             }
 
-**Relation combo box ရဲ့ selection item ပြောင်းတိုင်းမှာ Main List ဖြစ်တဲ့ Home.contactList ထဲက Where clause နဲ့ ဆွဲထုတ်ပီး relationList ဆိုတဲ့ list တခုထဲ ပြောင်းထည့်ပါတယ် ပီးတော့ grid view မှာ update လုပ်လိုက်ပါတယ်**
+> **Relation combo box ရဲ့ selection item ပြောင်းတိုင်းမှာ Main List ဖြစ်တဲ့ Home.contactList ထဲက Where clause နဲ့ ဆွဲထုတ်ပီး relationList
+> ဆိုတဲ့ list တခုထဲ ပြောင်းထည့်ပါတယ် ပီးတော့ grid view မှာ update
+> လုပ်လိုက်ပါတယ်**
+
 
     private void contactGridView_MouseDoubleClick(object sender, MouseEventArgs e)
             {
@@ -154,15 +165,15 @@ UpdateGridView function ရဲ့ responsibility က parameter ပေးတဲ�
                 new Action(selectedRowIndex).ShowDialog(this);
             }
 
-Grid view ရဲ့ cell ကို click တဲ့ အခါ click တဲ့ row index ကို ယူပီး Action form ကို ကူးပီး ပေးလိုက်ပါတယ်
+> Grid view ရဲ့ cell ကို click တဲ့ အခါ click တဲ့ row index ကို ယူပီး Action form ကို ကူးပီး ပေးလိုက်ပါတယ်
 
 
 ### Action Form
 ![Action Form](https://github.com/myatthu-mm/Contact/blob/master/ss/update.png)
 
-Action form သည် grid view က ရွေးလိုက်တဲ့ သူရဲ့ contact info ကို Remove / Update လုပ်ဖို့ဖြစ်ပါတယ်
+> Action form သည် grid view က ရွေးလိုက်တဲ့ သူရဲ့ contact info ကို Remove / Update လုပ်ဖို့ဖြစ်ပါတယ်
 
-Action.cs
+**Action.cs**
 
 		    int selectedIndex;
             public Action(int index)
@@ -171,7 +182,7 @@ Action.cs
                 selectedIndex = index;
             }
 
-Constructor ထဲမှာ Gridview က ပို့လိုက်တဲ့ index ကို selectedIndex variable ထဲ ထည့်ပီး သိမ်းထားပါတယ်
+> Constructor ထဲမှာ Gridview က ပို့လိုက်တဲ့ index ကို selectedIndex variable ထဲ ထည့်ပီး သိမ်းထားပါတယ်
 
     private void Action_Load(object sender, EventArgs e)
             {
@@ -183,7 +194,7 @@ Constructor ထဲမှာ Gridview က ပို့လိုက်တဲ့ in
                 chkFavourite.Checked = selectedContact.isFavourite;
             }
 
-Form load မှာ လုပ်ရမှာက main list ထဲကနေ ရရှိထားတဲ့ selectedIndex ပေးပီး contact info တွေ ဆွဲထုတ်ပီးတော့ Form ရဲ့ input field တွေမှာ လိုက်ဖြည့်ပေးရပါမယ်
+> Form load မှာ လုပ်ရမှာက main list ထဲကနေ ရရှိထားတဲ့ selectedIndex ပေးပီး contact info တွေ ဆွဲထုတ်ပီးတော့ Form ရဲ့ input field တွေမှာ လိုက်ဖြည့်ပေးရပါမယ်
 
 
 
@@ -209,14 +220,15 @@ Form load မှာ လုပ်ရမှာက main list ထဲကနေ ရရ
                 this.Close();
             }
 
-ပြင်ပီးသား ပြန် save ဖို့(update) နဲ့ delete လုပ်တာကလည်း main list (***Home.contactList***) ထဲမှာပဲ လုပ်ပေးရမှာ ဖြစ်ပါတယ်။
+> ပြင်ပီးသား ပြန် save ဖို့(update) နဲ့ delete လုပ်တာကလည်း main list (***Home.contactList***) ထဲမှာပဲ လုပ်ပေးရမှာ ဖြစ်ပါတယ်။
 
   
 
 ဒီလောက်ဆို အားလုံးလည်း အဆင်ပြေကြမယ် ထင်ပါတယ်
 
   
-Remark: Using *List* instead of *ArrayList* is efficient to use in ***Linq*** filtering.
+Remark: Using *List* instead of *ArrayList* is efficient to use in
+***Linq*** filtering.
 
 ![](https://github.com/myatthu-mm/Contact/blob/master/ss/rock.gif)
 
