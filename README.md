@@ -29,10 +29,9 @@ C# Windows Form Template Project
     contactList  =  new  List<Contact>();
     }
     
-> Contact data တွေကိုသိမ်းဖို့ *contactList* ဆိုတဲ့ Contact အမျိုးစား
-> List တစ်ခု ဆောက်ပါတယ်။ သတိထားရမှာက *static keyword*
-> သုံးပီးလုပ်ထားတာပါ၊  တခြား Form class ကနေ တိုက်ရိုက်
-> ယူသုံးလို့ရအောင်ပါ။ (Contact class ကိုတော့ project ထဲမှာ
+> Contact data တွေကိုသိမ်းဖို့ *contactList* ဆိုတဲ့ Contact အမျိုးစား List တစ်ခု ဆောက်ပါတယ်။ 
+> သတိထားရမှာက *static keyword* သုံးပီးလုပ်ထားတာပါ၊  
+> တခြား Form class ကနေ တိုက်ရိုက်ယူသုံးလို့ရအောင်ပါ။ (Contact class ကိုတော့ project ထဲမှာ
 > ကြည့်နိုင်ပါတယ်)
 
     private  void  Home_Load(object sender, EventArgs e)
